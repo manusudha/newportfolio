@@ -1,9 +1,8 @@
 import NextJs from '@/components/technologies/NextJs';
-import Sanity from '@/components/technologies/Sanity';
+import ReactIcon from '@/components/technologies/ReactIcon';
 import TailwindCss from '@/components/technologies/TailwindCss';
 import TypeScript from '@/components/technologies/TypeScript';
 import Vercel from '@/components/technologies/Vercel';
-import ReactIcon from '@/components/technologies/Vercel';
 import { Project } from '@/types/project';
 
 export const projects: Project[] = [
@@ -262,7 +261,6 @@ export const projects: Project[] = [
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
       { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'Sanity', icon: <Sanity key="sanity" /> },
       { name: 'Vercel', icon: <Vercel key="vercel" /> },
     ],
     github: '',
@@ -315,7 +313,7 @@ export const projects: Project[] = [
     video: '',
     link: 'http://easypay-er1m.vercel.app/',
     technologies: [
-      { name: 'React.js', icon: <ReactIcon key="ReactIcom" /> },
+      { name: 'React.js', icon: <ReactIcon /> },
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
       { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
       { name: 'Vercel', icon: <Vercel key="vercel" /> },
