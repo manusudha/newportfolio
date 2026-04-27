@@ -69,6 +69,7 @@ async function sendToTelegram(data: {
   message: string;
 }): Promise<boolean> {
   const telegramToken = process.env.TELEGRAM_BOT_TOKEN;
+
   const telegramChatId = process.env.TELEGRAM_CHAT_ID;
 
   if (!telegramToken) {
@@ -98,6 +99,7 @@ ${data.message.trim()}
   try {
     const telegramUrl = `https://api.telegram.org/bot${telegramToken}/sendMessage`;
 
+    console.log('this is telegramUrl ', telegramUrl);
     const response = await fetch(telegramUrl, {
       method: 'POST',
       headers: {
@@ -109,6 +111,7 @@ ${data.message.trim()}
         parse_mode: 'Markdown',
       }),
     });
+    console.log('this is response  :', response);
 
     if (response.ok) {
       return true;

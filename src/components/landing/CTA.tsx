@@ -37,6 +37,7 @@ export default function CTA({
     const cal = async () => {
       try {
         const calApi = await getCalApi();
+        console.log('this is calApi :  ', calApi);
         if (calApi) {
           calApi('on', {
             action: 'bookingSuccessful',
@@ -126,7 +127,7 @@ export default function CTA({
               calLink={calLink}
               config={{
                 name: 'Portfolio Visitor',
-                email: '',
+                email: 'rahul25ya@gmail.com',
                 notes: 'Booked from portfolio website',
               }}
               className="h-[500px] w-full rounded-lg"
