@@ -21,7 +21,6 @@ Click here to your portfolio template now:
 - **Contact Form** with Telegram integration
 - **SEO** optimized
 - **TypeScript** for type safety
-- **Umami Analytics** for privacy-focused web analytics
 
 ## Prerequisites
 

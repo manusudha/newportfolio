@@ -17,21 +17,6 @@ export const devices = [
     icon: <Laptop className="size-4" />,
   },
   {
-    /*
-  {
-    name: 'LG Ultragear 27GN650 (27 inch, 68.5 cm)',
-    icon: <Monitor className="size-4" />,
-  },
-  {
-    name: 'Magic Keyboard',
-    icon: <Keyboard className="size-4" />,
-  },
-  {
-    name: 'Logitech MX Master 3S Mouse',
-    icon: <Mouse className="size-4" />,
-  },*/
-  },
-  {
     name: ' Protronics Muffs M2 ',
     icon: <Headphones className="size-4" />,
   },
@@ -58,10 +43,8 @@ export const webExtensions = [
 ];
 
 export const software = [
-  { name: 'Dia', href: 'https://www.diabrowser.com/' },
   { name: 'Notion', href: 'https://www.notion.so/desktop' },
-  { name: 'TickTick', href: 'https://ticktick.com/download' },
-  { name: 'OBS Studio', href: 'https://obsproject.com/' },
-  { name: 'VLC', href: 'https://www.videolan.org/vlc/' },
-  { name: 'Ghostty', href: 'https://ghostty.org/' },
+  { name: 'VS Code', href: 'https://code.visualstudio.com/' },
+  { name: 'Git Bash', href: 'https://gitforwindows.org/' },
+  { name: 'cursor', href: 'https://cursor.com/home' },
 ];
