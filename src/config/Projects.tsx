@@ -255,7 +255,7 @@ export const projects: Project[] = [
   {
     title: 'Taskkar',
     description: 'Taskkar is the platform where you can manage your task',
-    image: '/project/taskkar.png',
+    image: '/project/Taskkar.png',
     video: '',
     link: 'https://taskkar-five.vercel.app/',
     technologies: [
