@@ -110,7 +110,7 @@ export async function POST(request: NextRequest) {
   try {
     const clientIP = getClientIP(request);
     const rateLimit = checkRateLimit(clientIP);
-
+    console.log('this is ratelimit ', rateLimit);
     if (!rateLimit.allowed) {
       return NextResponse.json(
         {
@@ -129,6 +129,7 @@ export async function POST(request: NextRequest) {
     }
 
     const apiKey = process.env.GEMINI_API_KEY;
+    console.log('this is apiKey : ', apiKey);
     if (!apiKey) {
       console.error('GEMINI_API_KEY not configured');
       return NextResponse.json(
@@ -184,7 +185,10 @@ export async function POST(request: NextRequest) {
       },
       body: JSON.stringify(requestBody),
     });
-
+    console.log('this is issue : ', response);
+    if (response.status === 429) {
+      console.log('retry after text', response.headers.get('retry-after'));
+    }
     if (!response.ok) {
       throw new Error(`Gemini API error: ${response.status}`);
     }

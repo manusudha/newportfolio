@@ -28,7 +28,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
         <div className="flex items-center gap-4">
           <Image
             src={experience.image}
-            alt={experience.company}
+            alt={experience.company || experience.position}
             width={100}
             height={100}
             className="size-12 rounded-md"

@@ -1,27 +1,13 @@
-import Appwrite from '@/components/technologies/Appwrite';
-import Bun from '@/components/technologies/Bun';
-import ExpressJs from '@/components/technologies/ExpressJs';
-import Github from '@/components/technologies/Github';
-import MDXIcon from '@/components/technologies/MDXIcon';
-import MongoDB from '@/components/technologies/MongoDB';
-import Motion from '@/components/technologies/Motion';
-import Netlify from '@/components/technologies/Netlify';
 import NextJs from '@/components/technologies/NextJs';
-import NodeJs from '@/components/technologies/NodeJs';
-import PostgreSQL from '@/components/technologies/PostgreSQL';
-import Prisma from '@/components/technologies/Prisma';
-import ReactIcon from '@/components/technologies/ReactIcon';
 import Sanity from '@/components/technologies/Sanity';
-import Shadcn from '@/components/technologies/Shadcn';
-import SocketIo from '@/components/technologies/SocketIo';
 import TailwindCss from '@/components/technologies/TailwindCss';
-import ThreeJs from '@/components/technologies/ThreeJs';
 import TypeScript from '@/components/technologies/TypeScript';
 import Vercel from '@/components/technologies/Vercel';
+import ReactIcon from '@/components/technologies/Vercel';
 import { Project } from '@/types/project';
 
 export const projects: Project[] = [
-  {
+  /*{
     title: 'NotesBuddy',
     description:
       'A comprehensive study platform with notes, flashcards, quizzes, AI chatbot, and interactive learning tools',
@@ -264,6 +250,80 @@ export const projects: Project[] = [
     live: 'https://that-startup.ramx.in/',
     details: true,
     projectDetailsPageSlug: '/projects/that-startup',
+    isWorking: true,
+  },*/
+  {
+    title: 'Taskkar',
+    description: 'Taskkar is the platform where you can manage your task',
+    image: '/project/taskkar.png',
+    video: '',
+    link: 'https://taskkar-five.vercel.app/',
+    technologies: [
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'Sanity', icon: <Sanity key="sanity" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+    ],
+    github: '',
+    live: 'https://taskkar-five.vercel.app/',
+    details: true,
+    projectDetailsPageSlug: '/projects/taskkar',
+    isWorking: true,
+  },
+  {
+    title: 'imdb 250 movie',
+    description: 'this is the platform where we can see top 250 movies',
+    image: '/project/imdbtop250.png',
+    video: '',
+    link: 'https://dimdbfrontend.vercel.app/',
+    technologies: [
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+    ],
+    github: '',
+    live: 'https://dimdbfrontend.vercel.app/',
+    details: true,
+    projectDetailsPageSlug: '/projects/imdb',
+    isWorking: true,
+  },
+  {
+    title: 'Snack webstore',
+    description:
+      'this the platform i developed for one of my client as a freelance project',
+    image: '/project/Snackweb.png',
+    video: '',
+    link: 'https://dhumale-snacks.vercel.app/',
+    technologies: [
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+    ],
+    github: '',
+    live: 'https://dhumale-snacks.vercel.app/',
+    details: true,
+    projectDetailsPageSlug: '/projects/snack',
+    isWorking: true,
+  },
+  {
+    title: 'Easypay',
+    description: 'It is the fake money transfer app ',
+    image: '/project/easypay.png',
+    video: '',
+    link: 'http://easypay-er1m.vercel.app/',
+    technologies: [
+      { name: 'React.js', icon: <ReactIcon key="ReactIcom" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+    ],
+    github: '',
+    live: 'http://easypay-er1m.vercel.app/',
+    details: true,
+    projectDetailsPageSlug: '/projects/easypay',
     isWorking: true,
   },
 ];

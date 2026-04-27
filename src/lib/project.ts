@@ -14,6 +14,10 @@ const projectsDirectory = path.join(process.cwd(), 'src/data/projects');
  * Get all project case study files from the projects directory
  */
 export function getProjectCaseStudySlugs(): string[] {
+  console.log(
+    'this is projectDirectories i have entered to check file ',
+    fs.readdirSync(projectsDirectory),
+  );
   if (!fs.existsSync(projectsDirectory)) {
     return [];
   }
@@ -43,7 +47,14 @@ export function getProjectCaseStudyBySlug(
     // Validate frontmatter
     const frontmatter = data as ProjectCaseStudyFrontmatter;
     if (!frontmatter.title || !frontmatter.description) {
-      throw new Error(`Invalid frontmatter in ${slug}.mdx`);
+      console.error(`Invalid frontmatter in ${slug}.mdx:`, {
+        title: frontmatter.title,
+        description: frontmatter.description,
+        allData: data,
+      });
+      throw new Error(
+        `Invalid frontmatter in ${slug}.mdx - missing title or description`,
+      );
     }
 
     return {
